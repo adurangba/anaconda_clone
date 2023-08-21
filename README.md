@@ -1,0 +1,1 @@
+It's a static an unresponsive clone of the anaconda download webpage
