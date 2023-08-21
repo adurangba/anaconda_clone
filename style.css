@@ -1,0 +1,283 @@
+@import url("https://fonts.cdnfonts.com/css/museo-sans-rounded");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  scroll-behavior: smooth;
+  font-family: "Museo Sans Rounded", sans-serif;
+}
+button {
+  font-family: "Museo Sans Rounded", sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 5% 1%;
+  background-color: #f7f7f7;
+  position: sticky;
+  top: 0;
+}
+nav a {
+  color: #000;
+}
+a {
+  text-decoration: none;
+}
+.logo {
+  font-size: 1.5em;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  color: #0b2227;
+}
+.logo img {
+  width: 1.5em;
+  margin: 2%;
+  border-radius: 50%;
+  margin-right: 1%;
+}
+.menuItems a {
+  font-size: 1.2em;
+  color: #0b2227;
+  display: inline-block;
+}
+hr {
+  width: 100%;
+}
+.menuItems a.active hr {
+  border: 2px solid #43b049;
+}
+.menuItems + button {
+  padding: 1% 2%;
+  border-radius: 23px 24px;
+  font-size: 1em;
+  background-color: #0b2227;
+  color: #fff;
+  border: 0;
+  outline: 0;
+}
+.menuItems ~ button:hover {
+  background-color: #152442;
+  box-shadow: 2px 3px 15px #0b222791;
+}
+.container {
+  width: 100%;
+  padding: 5% 4% 2%;
+  display: flex;
+  justify-content: space-between;
+  color: #556575;
+}
+.container .thanks {
+  height: inherit;
+  padding: 8% 2%;
+}
+.container h2 {
+  font-size: 2.9rem;
+  font-weight: 300;
+}
+.container p {
+  font-size: 1.1em;
+  line-height: 2;
+  /* color: #0b2227; */
+  color: #556575;
+}
+.container img {
+  height: 50vh;
+  width: 45%;
+}
+.container .box {
+  display: flex;
+  margin-top: 3%;
+}
+.container .box button {
+  padding: 2% 4%;
+  border-radius: 30px;
+  font-size: 1em;
+  cursor: pointer;
+}
+.container .box button:nth-child(1) {
+  background-color: #43b049;
+  color: #ffe;
+  margin-right: 5%;
+  border: 0;
+}
+.container .box button:nth-child(2) {
+  border: 2px solid #43b049;
+  transition: 2s ease-in-out;
+  padding: 1.8% 4%;
+}
+.container .box button:nth-child(2):hover {
+  background-color: #43b049;
+  color: #ffe;
+  border: 2px solid #fff;
+}
+.container:nth-child(3) {
+  background: linear-gradient(180deg, #f8f8f8 10%, #ffe, #fff);
+}
+.container:nth-child(3) img {
+  height: 20vh;
+  width: 40vw;
+  border-radius: 10px;
+  margin-top: 3%;
+}
+.container:nth-child(3) .right {
+  margin-left: 4%;
+}
+.container:nth-child(3) p {
+  margin: 3% 0 5%;
+}
+.container:nth-child(3) ul li {
+  margin: 5% 0;
+}
+.container:nth-child(3) .right button {
+  margin-top: 4%;
+  padding: 2% 4%;
+  border-radius: 30px;
+  border: 0;
+  background-color: #43b049;
+  color: #ffe;
+}
+.container:nth-child(4) {
+  background: #f4f6f8;
+}
+.left {
+  width: 48%;
+}
+.left h2,
+.fourth h2 {
+  margin-bottom: 5%;
+}
+.left p,
+.fourth p {
+  line-height: 2;
+  font-size: 1.29em;
+  font-weight: 300;
+}
+.left + img {
+  height: 55vh;
+  border-radius: 3px;
+}
+
+.fourth img {
+  width: 50vw;
+  margin-right: 5%;
+}
+.data p {
+  font-size: 1.5em;
+}
+.data button {
+  padding: 2% 4%;
+  border-radius: 30px;
+  font-size: 1.2em;
+  border: 0;
+  margin-top: 4%;
+  cursor: pointer;
+  background-color: #43b049;
+  color: #ffe;
+}
+.wrapper,
+.one {
+  display: flex;
+  align-items: center;
+  color: #ffe;
+  flex-direction: column;
+  padding: 2%;
+  background-color: #152442;
+}
+.holder {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3%;
+}
+.one {
+  width: 31%;
+}
+
+.one img {
+  border-radius: 50%;
+  width: 12em;
+}
+.one h2 {
+  font-size: 2em;
+  line-height: 2;
+}
+.one p {
+  line-height: 2;
+}
+.levelContainer {
+  background: #f4f7f7;
+  padding: 3%;
+  text-align: center;
+}
+.levelContainer h2 {
+  font-weight: normal;
+  font-size: 2em;
+  line-height: 3;
+}
+.levelContainer p {
+  font-size: 1.1em;
+  line-height: 1.3;
+  font-weight: normal;
+}
+.levelContainer p:nth-child(3) {
+  margin-top: 2%;
+  color: #007cba;
+}
+.lastContainer {
+  display: flex;
+  background-color: #152442;
+  padding: 2%;
+  justify-content: space-around;
+  color: #fff;
+}
+.lastContainer a {
+  color: #fff;
+  line-height: 2;
+}
+.logoSide {
+  width: 30%;
+}
+.logoSide img {
+  width: 6em;
+}
+.logoSide p {
+  font-size: 2em;
+  font-weight: 500;
+}
+.logoSide p span{
+  color: green;
+}
+.products {
+  width: 20%;
+}
+.products h2{
+  margin-bottom: 15%;
+}
+.products li {
+  list-style-type: none;
+}
+footer {
+  background-color: #152442;
+  padding: 2% 5%;
+  color: #fff;
+}
+footer div {
+  display: flex;
+  justify-content: space-between;
+}
+div p:nth-child(2){
+  margin-right: 1%;
+}
+hr {
+  width: 100%;
+  border: 0.5px solid #fff;
+  margin-bottom: 3%;
+}
